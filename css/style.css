@@ -45,9 +45,15 @@ img {
 header {
   border-bottom: 1px solid #ececec;
 }
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 250ms ease-in;
+}
 .backdrop {
-  top: 0;
   position: fixed;
+  top: 0;
   background-color: #00000033;
   width: 100%;
   height: 100%;
@@ -63,6 +69,8 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
+    0px 1px 3px 0px #0000001f;
 }
 .order__button_svg {
   position: absolute;
@@ -81,12 +89,7 @@ header {
   height: 30px;
   cursor: pointer;
 }
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 250ms ease-in;
-}
+
 /* Menu&footer */
 .navigation {
   display: flex;
@@ -305,14 +308,13 @@ footer .container {
   margin: 0 auto;
   gap: 30px;
 }
-.team__list_iteam {
+.team__list__iteam {
   width: 270px;
   background-color: #ffffff;
   margin: 0 auto;
   border-radius: 4px;
-  box-shadow: 0px 2px 1px 0px #00000033;
-  box-shadow: 0px 1px 1px 0px #00000024;
-  box-shadow: 0px 1px 3px 0px #0000001f;
+  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
+    0px 1px 3px 0px #0000001f;
 }
 .team__description {
   text-align: center;
