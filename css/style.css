@@ -3,6 +3,11 @@
   --grey-color: #757575;
   --section-padding: 94px;
   --icon--color: #afb1b8;
+  --header--gradient: linear-gradient(
+    to bottom,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
 }
 
 h1,
@@ -215,14 +220,9 @@ footer .container {
 /* agencja */
 .main__section {
   text-align: center;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-image: var(--header--gradient),
     url("../images/background-header.jpg");
   background-color: #2f303a66;
-  background-blend-mode: difference;
   background-size: 1600px;
   background-position: center;
   background-repeat: no-repeat;
