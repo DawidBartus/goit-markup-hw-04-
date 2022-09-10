@@ -107,6 +107,7 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-weight: 500;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu__a:hover,
 .menu__a:focus {
@@ -164,6 +165,8 @@ header {
   justify-content: center;
   align-items: center;
   fill: var(--grey-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__contact__a:hover,
 .header__contact__a:focus {
@@ -192,6 +195,7 @@ header {
 .footer__contact__a {
   text-decoration: none;
   color: #ffffff99;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__contact__a:hover,
 .footer__contact__a:focus {
@@ -211,7 +215,12 @@ footer .container {
 /* agencja */
 .main__section {
   text-align: center;
-  background-image: url("../images/background-header.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/background-header.jpg");
   background-color: #2f303a66;
   background-blend-mode: difference;
   background-size: 1600px;
@@ -366,6 +375,9 @@ footer .container {
   font-family: "Roboto", sans-serif;
   border-radius: 4px;
   padding: 6px 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio__button:hover,
 .portfolio__button:focus {
@@ -382,10 +394,10 @@ footer .container {
   text-decoration: none;
   color: inherit;
   overflow: hidden;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio__list__a:hover,
 .portfolio__list__a:focus {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -447,6 +459,8 @@ footer .container {
   border-radius: 4px;
   display: block;
   fill: var(--icon--color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client__svg:hover,
 .client__svg:focus {
@@ -464,6 +478,8 @@ footer .container {
   display: flex;
   border-radius: 50%;
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social__media__icon:hover,
 .social__media__icon:focus {
@@ -497,6 +513,7 @@ footer .container {
   display: flex;
   border-radius: 50%;
   fill: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__social__media:hover,
 .footer__social__media:focus {
